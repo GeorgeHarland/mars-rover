@@ -2,7 +2,7 @@
 
 A Mars Rover simulator that takes a Rover's command sequence as input and returns it's end position.
 
-This is build using Node, TypeScript, and the Jest testing framework with Babel.
+This is built using Node, TypeScript, Jest.
 
 ## Instructions
 
