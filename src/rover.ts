@@ -1,9 +1,9 @@
-import { CardinalDirectionsType, RotationDirectionType, Environment } from "./types";
+import { CardinalDirectionsType, RotationDirectionType, Environment, RoverPosition } from "./types";
 
 export default class Rover {
   constructor(public x: number, public y: number, public direction: CardinalDirectionsType, private environment: Environment) {}
   
-  public runFullInput(input: string) {
+  public runFullInput(input: string): RoverPosition {
     for(const char of input) {
       switch (char) {
         case 'M':
@@ -17,6 +17,8 @@ export default class Rover {
           break;
       }
     }
+
+    return { x: this.x, y: this.y, direction: this.direction }
   }
   
   private moveForward() {
