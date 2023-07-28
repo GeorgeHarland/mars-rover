@@ -14,7 +14,9 @@ Follow the run guide below, then type the following inputs:
 ## Run
 
 First install dependancies with 'npm i'
+
 Run with 'npm start'
+
 Run tests with 'npm test'
 
 ## Assumptions
